@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo App | Nisha Dodiya</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class ="container">
+        <header class ="header">
+        <h1>ToDo App</h1>
+        <p class="subtitle">Stay organized every day</p>
+        </header>
+     <section class="input-section">
+         
+        <div class="input-group">
+            <label for="task-input">Add a task</label>
+    <input
+        type="text"
+        id="task-input"
+        placeholder="Enter your task..."
+    >
+   <button type="button" id="add-task-btn">Add Task</button>
+    </div>
+    </section>
+    <section class="search-section">
+<label for="search-input">Search tasks</label>
+    <input
+        type="text"
+        id="search-input"
+        placeholder="Search tasks..."
+    >
+
+</section>
+    <section class ="filter-section">
+      <button type="button" class="filter-btn active" data-filter="all">All</button>
+    <button type="button" class="filter-btn" data-filter="pending">Pending</button>
+    <button type="button" class="filter-btn" data-filter="completed">Completed</button>
+     </section>
+    <p class="empty-message">
+            No tasks yet. Add your first task!
+        </p>
+         <section class="task-section">
+
+            <ul id="task-list">
+                </ul>
+                </section>
+     <section class ="statistics">
+        <p>Total Tasks: <span id="total-tasks">0</span></p>
+
+            <p>Completed: <span id="completed-tasks">0</span></p>
+
+            <p>Remaining: <span id="remaining-tasks">0</span></p>
+     </section>
+      <section class="action-section">
+      <button type="button" id="clear-all-btn">Clear All</button>
+        </section>
+    </main>
+     <script src="script.js"></script>
+</body>
+</html>
